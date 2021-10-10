@@ -67,7 +67,6 @@ let modal = function(modalClick){
 servicesButton.forEach((modalBtn,i)=>{
     modalBtn.addEventListener('click', () =>{
         modal(i);
-        console.log(i);
     })
 })
 
@@ -78,3 +77,16 @@ servicesClose.forEach((modalClose) => {
         });
     })
 })
+/* ======================= PORTFOLIO SWIPER ======================= */
+let swiper = new Swiper('.portfolio_container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

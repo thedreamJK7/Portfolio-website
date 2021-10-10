@@ -687,3 +687,54 @@ img {
     opacity: 1;
     visibility: visible;
 }
+
+/* ======================= PORTFOLIO ======================= */
+.portfolio {
+    position: relative;
+}
+
+.portfolio_container {
+    overflow: initial;
+}
+
+.portfolio_content {
+    padding: 0 1.5rem;
+}
+
+.portfolio_img {
+    width: 100%;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio_title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_description {
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_button:hover .button_icon {
+    transform: translateX(.25rem);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper_portfolio_icon {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+/* .swiper-button-prev {
+    left: -.25rem;
+}
+
+.swiper-button-next {
+    right: -.25rem;
+} */
+
