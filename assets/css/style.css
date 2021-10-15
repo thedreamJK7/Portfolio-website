@@ -982,6 +982,40 @@ img {
     background-color: var(--text-color-light);
 }
 
+/*==================== DOWNLOADER ====================*/
+.content {
+    display: none;
+}
+
+.downloader {
+    width: 100vw;
+    height: 100vh;
+    background-color: #16191e;
+    overflow: hidden;
+    position: absolute;
+}
+
+.downloader > div {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 3.5px solid #45474b;
+    border-top-color: #2a99e6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -1029,6 +1063,13 @@ img {
     .project_img {
         width: 200px;
     }
+
+    .downloader > div {
+        width: 65px;
+        height: 65px;
+        border: 7px solid #45474b;
+        border-top-color: #2a99e6;
+    }
 }
 
 /* For medium devices */
@@ -1059,6 +1100,13 @@ img {
     }
     .project_bg {
         padding-bottom: 3rem;
+    }
+
+    .downloader > div {
+        width: 75px;
+        height: 75px;
+        border: 11.5px solid #45474b;
+        border-top-color: #2a99e6;
     }
 }
 
@@ -1202,6 +1250,12 @@ img {
     .footer_socials {
         justify-self: flex-end;
     }
+    .downloader > div {
+        width: 90px;
+        height: 90px;
+        border: 13px solid #45474b;
+        border-top-color: #2a99e6;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1237,6 +1291,13 @@ img {
     }
     .swiper-pagination-bullets {
         bottom: -2.5rem !important;
+    }
+    .downloader > div {
+        height: 100px;
+        width: 100px;
+        border: 15px solid #45474b;
+        border-radius: 50%;
+        border-top-color: #2a99e6;
     }
 }
 
