@@ -786,7 +786,7 @@
                         </div>
                     </div>
 
-                    <form action="email.php" class="contact_form grid">
+                    <form class="contact_form grid" data-wow-delay=".25s" method="post" action="email.php">
                         <div class="contact_inputs grid">
                             <div class="contact_content">
                                 <label for="name" class="contact_label">Name</label>
@@ -809,9 +809,10 @@
                             </div>
 
                             <div>
-                                <a href="#" class="button button_flex">
+                                <!-- <a href="#" >
                                     Send message <i class="uil uil-message button_icon"></i>
-                                </a>
+                                </a> -->
+                                <input class="button button_flex" type="submit" value="Submit Form" id="send_message" placeholder="Send message">
                             </div>
 
                         </div>
